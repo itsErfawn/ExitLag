@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'yekan';
+    src: url('/fonts/iranyekanwebmediumfanum.woff');
+}
+@font-face {
+    font-family: 'yekanRegular';
+    src: url('/fonts/iranyekanwebregularfanum.woff');
+}
+@font-face {
+    font-family: 'yekanLight';
+    src: url('/fonts/iranyekanwebmlightfanum.woff');
+}
+@font-face {
+    font-family: 'yekanThin';
+    src: url('/fonts/iranyekanwebthinfanum.woff');
+}
+@font-face {
+    font-family: 'yekanBold';
+    src: url('/fonts/iranyekanwebboldfanum.woff');
+}
+@font-face {
+    font-family: 'yekanBlack';
+    src: url('/fonts/iranyekanwebblackfanum.woff');
+}
+@font-face {
+    font-family: 'yekanExtraBold';
+    src: url('/fonts/iranyekanwebextraboldfanum.woff');
+}
+@font-face {
+    font-family: 'yekanExtraBLack';
+    src: url('/fonts/iranyekanwebextraBLack fanum.woff');
+}
+
+*{
+    font-family: 'yekan';
+    color: #FFFFFF;
+}
+#_next{
+    @apply flex;
+    height: 100vh;
+}
+body{
+    background-color: #1D1E22;
+}
+.side-bar__wrapper{
+    @apply w-2/12;
+}
+.content__wrapper{
+@apply w-10/12 overflow-y-scroll;
+}
+.content__wrapper::-webkit-scrollbar{
+    display: none
+}
+.sideBar{
+    @apply p-10 h-full flex flex-col items-center;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.3);
+}
+#Logo{
+
+}
+.menu-navigation{
+    height: -webkit-fill-available;
+    @apply flex items-center justify-center flex-col;
+}
+.menu{
+@apply flex flex-col items-center justify-center gap-5
+}
+.menu-item{
+
+}
+.menu-item.active{
+    @apply bg-primary p-4 rounded-full;
+}
+.menu-link{
+
+}
+.menu-icon{
+@apply stroke-white w-[38px] h-[38px];
+}
+
+header{
+    @apply py-5
+}
+.header-wrapper{
+@apply flex items-center justify-between
+}
+.searchBar-wrapper{
+@apply flex items-center bg-[#646E6D] p-3 rounded-[30px] w-[30%];
+}
+.searchBar{
+@apply bg-transparent text-white w-full px-3 border-none outline-none
+}
+.searchBar-btn{
+
+}
+.home-slider-images{
+    @apply w-full h-[300px] rounded-[16px] shadow-lg;
+}
+
+.gaming-card {
+    @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700;
+}
+
+.gaming-card-image {
+    @apply rounded-t-lg;
+}
+
+.gaming-card-content {
+    @apply p-5;
+}
+
+.gaming-card-title {
+    @apply mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white;
+}
+
+.gaming-card-text {
+    @apply mb-3 font-normal text-gray-700 dark:text-gray-400;
+}
+
+.gaming-card-button {
+    @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.gaming-card-icon {
+    @apply rtl:rotate-180 w-3.5 h-3.5 ms-2;
+}
