@@ -101,11 +101,11 @@ header{
 }
 
 .gaming-card {
-    @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700;
+    @apply border border-gray-200 rounded-lg shadow-sm ;
 }
 
 .gaming-card-image {
-    @apply rounded-t-lg;
+    @apply rounded-t-lg w-full h-[200px];
 }
 
 .gaming-card-content {
@@ -119,11 +119,45 @@ header{
 .gaming-card-text {
     @apply mb-3 font-normal text-gray-700 dark:text-gray-400;
 }
-
-.gaming-card-button {
-    @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
-}
-
 .gaming-card-icon {
     @apply rtl:rotate-180 w-3.5 h-3.5 ms-2;
+}
+.section-title{
+    font-size: 24px;
+    font-family: 'yekanBold';
+    padding: 0 0 20px 0;
+}
+footer{
+    @apply flex items-center justify-center py-5 px-2.5;
+}
+.footer-text{
+    font-size: 20px;
+}
+.footer-link{
+    @apply text-primary
+}
+.game-heading{
+    font-size: 24px;
+    margin: 20px 0;
+}
+.game-image-slider{
+    @apply w-full h-[450px] rounded-2xl
+}
+.game-image-slider--nav{
+    @apply w-full h-[100px] rounded-xl
+}
+.game-table{
+    
+}
+.game-table_row{
+@apply flex justify-between
+}
+.game-table_col{
+@apply py-4 px-2.5 border border-white w-6/12 flex items-center justify-start
+}
+.game-table_col__text{
+
+}
+.game-caption{
+    white-space: pre-wrap;
 }

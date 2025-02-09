@@ -5,7 +5,7 @@ import 'swiper/css'
 import Link from 'next/link'
 function GameSlider() {
   return (
-    <div>
+    <div className='my-5'>
         <Swiper>
         <SwiperSlide>
             <Link href={'/'} >

@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Sidebar from '../components/modules/sideBar/SideBar'
 import Header from '../components/modules/header/Header'
+import Footer from '../components/modules/footer/Footer'
 import Container from '../components/modules/container/Container'
 export const metadata = {
   title: "Exit Lag",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
             <Container>
             <Header/>
             {children}
+            <Footer/>
             </Container>
             </div>
         </main>
