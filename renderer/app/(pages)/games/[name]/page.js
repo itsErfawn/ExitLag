@@ -1,5 +1,10 @@
 import React from 'react'
 import GameGallery from "../../../../components/templates/home/gameSlider/GameGallery"
+export async function generateMetadata({ params }) {
+  return {
+    title: 'game',
+  }
+}
 function GamePage() {
   return (
     <div>
